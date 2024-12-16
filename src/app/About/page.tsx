@@ -1,7 +1,7 @@
-
 "use client";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -12,9 +12,11 @@ const About = () => {
           A brand built on the love of craftsmanship, quality, and outstanding customer service
         </div>
         <div className="mt-6 md:mt-0">
+          <Link href="/Allproducts">
           <button className="bg-gray-200 h-12 w-40 rounded-sm text-custom-purple">
             View our products
           </button>
+          </Link>
         </div>
       </div>
       {/* Story Section */}

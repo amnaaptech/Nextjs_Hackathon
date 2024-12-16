@@ -1,16 +1,8 @@
 "use client"
 import Image from "next/image";
 import React from "react";
-import { useRouter } from 'next/navigation';
-
-
-
+import Link from "next/link";
 const Ourproduct = () => {
-    const router = useRouter();
-
-    const handleNavigation = () => {
-      router.push('/productlisting');
-    };
   return (
     <div>
      <section>
@@ -26,7 +18,7 @@ const Ourproduct = () => {
                 height={800}
                 width={800}
                 alt='sofa'
-                className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
+                className='w-full h-[80%] object-cover'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The popular suede sofa</p>
@@ -41,7 +33,7 @@ const Ourproduct = () => {
                 height={800}
                 width={800}
                 alt='chair'
-                className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
+                className='w-full h-[80%] object-cover'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The Dandy chair</p>
@@ -56,7 +48,7 @@ const Ourproduct = () => {
                 height={900}
                 width={900}
                 alt='chair'
-                className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
+                className='w-full h-[80%] object-cover'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The Dandy chair</p>
@@ -68,9 +60,11 @@ const Ourproduct = () => {
 
           {/* Button */}
           <div className='my-10 flex justify-center items-center'>
-            <button className='bg-[#F9F9F9] py-4 px-6 rounded-[5px] text-[#2A254B]' onClick={handleNavigation}>
+          <Link href="/Allproducts">
+            <button className='bg-[#F9F9F9] py-4 px-6 rounded-[5px] text-[#2A254B]'>
               View products
             </button>
+          </Link>
           </div>
         </div>
       </section> 
