@@ -16,6 +16,8 @@ const Card = () => {
               <img
                 src="/images/slikvase1.png"
                 alt="Product 1"
+                width={20}
+                height={20}
                 className="w-20 h-20 sm:w-28 sm:h-28 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
               <div className="ml-6">
                 <h1 className="text-base sm:text-lg font-medium">
