@@ -52,7 +52,7 @@ const allproducts = () => {
       </div>
     </div>
   </div>
-    <div className='px-4 md:px-8 py-12 text-[#2A254B] mt-12">
+    <div className="px-4 md:px-8 py-12 text-[#2A254B] mt-12">
       {/* Product Items row 1*/}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-12">
         {/* Product 1 */}
